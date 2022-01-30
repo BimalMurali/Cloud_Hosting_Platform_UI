@@ -39,7 +39,14 @@
             </div>
             <div class="showcase-form card">
                 <h2>Request a Demo</h2>
-                <form>
+                <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact">
+                    <p class="hidden">
+                        <label>
+                          Don’t fill this out if you’re human: <input name="bot-field" />
+                        </label>
+                      </p>
+
                     <div class="form-control">
                         <input type="text" name="name" placeholder="Name" required>
                     </div>
@@ -91,14 +98,15 @@
                 <h3>Deploy in seconds </h3>
             </div>
         </div>
-    </section>  <!-- /Cli ends -->
+    </section> <!-- /Cli ends -->
 
     <!-- Cloud -->
     <section class="cloud bg-primary my-2 py-2">
         <div class="container grid">
             <div class="text-center">
                 <h2 class="lg">Cloud Hosting</h2>
-                <p class="lead my-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex nostrum dolores cupiditate.</p>
+                <p class="lead my-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex nostrum dolores
+                    cupiditate.</p>
                 <a href="features.html" class="btn btn-dark">Read More</a>
             </div>
             <img src="images/cloud.png" alt="">

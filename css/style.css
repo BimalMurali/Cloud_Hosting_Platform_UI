@@ -39,6 +39,10 @@ p{
 img{
     width: 100%;
 }
+.hidden{
+    visibility:hidden;
+    height:0;
+}
 /* Navbar */
 .navbar{
     background-color: #047aed;
